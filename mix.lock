@@ -1,0 +1,3 @@
+%{
+  "elixir_a2s": {:hex, :elixir_a2s, "0.4.3", "bb9f1ef5130cc33f3bd5bbaa71fe38ba7a886230c68c00bc73ab15abf711c98f", [:mix], [], "hexpm", "aa4ef82e91f44e5711164c89c31df9160b960fbaf6305c1b4d957954f5231be3"},
+}

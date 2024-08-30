@@ -12,7 +12,10 @@ defmodule ExQuery do
       :world
 
   """
-  def hello do
-    :world
+  @spec query(
+          hostname :: String.t(),
+          port :: :inet.port_number()
+        ) :: any()
+  def query(hostname, port) do
   end
 end
