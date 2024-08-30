@@ -18,6 +18,6 @@ defmodule ExQuery do
         ) :: any()
   def query(hostname, port) do
     # check if the hostname is not a inet.ipv4_address
-    ExQuery.Dns.Resolver.resolve(hostname)
+    ExQuery.Dns.resolve(hostname)
   end
 end

@@ -1,4 +1,4 @@
-defmodule ExQuery.Dns.Resolver do
+defmodule ExQuery.Dns do
   @spec resolve(String.t()) :: {:ok, :inet.ip4_address()} | {:error, :invalid_hostname}
   def resolve(hostname) do
     case DNS.resolve(hostname) do
