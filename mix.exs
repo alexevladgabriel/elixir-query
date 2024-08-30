@@ -1,13 +1,25 @@
-defmodule ElixirQuery.MixProject do
+defmodule ExQuery.MixProject do
   use Mix.Project
+
+  @source_url "https://github.com/gamequerydotro/ex-query"
 
   def project do
     [
-      app: :elixir_query,
+      app: :ex_query,
       version: "0.1.0",
       elixir: "~> 1.17",
       start_permanent: Mix.env() == :prod,
       deps: deps()
+    ]
+  end
+
+  def package do
+    [
+      name: "ex_query",
+      source_url: @source_url,
+      description: "General game servers query mechanism for Elixir",
+      licenses: ["MIT"],
+      maintainers: ["Scai"]
     ]
   end
 

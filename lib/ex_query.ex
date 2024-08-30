@@ -1,4 +1,4 @@
-defmodule ElixirQuery do
+defmodule ExQuery do
   @moduledoc """
   Documentation for `ElixirQuery`.
   """
