@@ -17,5 +17,7 @@ defmodule ExQuery do
           port :: :inet.port_number()
         ) :: any()
   def query(hostname, port) do
+    # check if the hostname is not a inet.ipv4_address
+    ExQuery.Dns.Resolver.resolve(hostname)
   end
 end

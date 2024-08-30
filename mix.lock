@@ -1,3 +1,4 @@
 %{
+  "dns": {:hex, :dns, "2.4.0", "44790a0375b28bdc7b59fc894460bfcb03ffeec4c5984e2c3e8b0797b1518327", [:mix], [], "hexpm", "e178e353c469820d02ba889d6a80d01c8c27b47dfcda4016a9cbc6218e3eed64"},
   "elixir_a2s": {:hex, :elixir_a2s, "0.4.3", "bb9f1ef5130cc33f3bd5bbaa71fe38ba7a886230c68c00bc73ab15abf711c98f", [:mix], [], "hexpm", "aa4ef82e91f44e5711164c89c31df9160b960fbaf6305c1b4d957954f5231be3"},
 }
