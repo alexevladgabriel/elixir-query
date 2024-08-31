@@ -26,7 +26,7 @@ defmodule ExQuery.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      mod: {ExQuery.Application, []},
+      mod: {ExQuery, []},
       extra_applications: [:logger]
     ]
   end

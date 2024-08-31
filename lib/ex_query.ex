@@ -1,4 +1,6 @@
 defmodule ExQuery do
+  use Application
+
   @spec query(
           hostname :: String.t(),
           port :: :inet.port_number()
@@ -18,5 +20,16 @@ defmodule ExQuery do
       {:error, :recv_timeout} -> {:error, :query_timeout}
       {:error, err} -> {:error, err}
     end
+  end
+
+  @doc false
+  @impl Application
+  def start(_type, _args) do
+    children = [
+      {A2S.Client, []}
+    ]
+
+    opts = [strategy: :one_for_one, name: ExQuery.Supervisor]
+    Supervisor.start_link(children, opts)
   end
 end
